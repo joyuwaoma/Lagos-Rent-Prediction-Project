@@ -8,8 +8,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import r2_score, mean_squared_error
 import joblib
 
-# Load dataset
-df = pd.read_csv('/Users/mac/Downloads/lagos-rent.csv')
+# Load dataset (use local repository CSV)
+df = pd.read_csv('lagos-rent.csv')
 df.columns = df.columns.str.strip()
 
 # Extract property type
