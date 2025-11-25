@@ -32,7 +32,7 @@ X_input = pd.DataFrame([{
     "Bedrooms": float(bedrooms),
     "Bathrooms": float(bathrooms),
     "Toilets": float(toilets),
-    "Newly_Built": float(newly_built_numeric)
+    "Newly Built": float(newly_built_numeric)
 }])
 
 st.divider()
