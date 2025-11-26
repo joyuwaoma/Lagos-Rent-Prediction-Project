@@ -1,6 +1,8 @@
 # Lagos Rent Prediction Project:
 
-# Objective:
+![Rent](https://github.com/joyuwaoma/Lagos-Rent-Prediction-Project/blob/master/Rent.jpg)
+
+## Objective:
 
 The objective of this project is to build a machine learning model that predicts property rental prices in Lagos.
 
