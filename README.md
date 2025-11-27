@@ -5,6 +5,7 @@
 ## Objective:
 
 The objective of this project is to build a machine learning model that predicts property rental prices in Lagos.
+Fill in the details here https://lagos-rent-prediction-project.streamlit.app/
 
 ## Business Value:
 
