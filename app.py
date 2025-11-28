@@ -5,7 +5,7 @@ from load_model import model  # import trained pipeline
 # App title
 st.title("🏠 Lagos Rent Prediction App")
 st.divider()
-st.write("Predict monthly house rent in Lagos based on property features.")
+st.write("Predict yearly house rent in Lagos based on property features.")
 st.divider()
 
 # Input options
