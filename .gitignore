@@ -2,7 +2,6 @@ venv/
 .DS_Store
 __pycache__/
 *.pyc
-*.pkl
 *.env
 *.egg-info/
 /.vscode/
