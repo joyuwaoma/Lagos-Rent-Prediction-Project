@@ -6,4 +6,4 @@ __pycache__/
 *.env
 *.egg-info/
 /.vscode/
-/.ipynb_checkpoints/.DS_Store
+/.ipynb_checkpoints/.DS_Store*.pkl
