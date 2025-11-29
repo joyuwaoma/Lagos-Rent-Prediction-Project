@@ -39,7 +39,7 @@ X_input = pd.DataFrame([{
     "Toilets": float(toilets),
     "Newly Built": float(newly_built_numeric),
     "Furnished": float(furnished),
-    "serviced": float(serviced)
+    "Serviced": float(serviced)
 }])
 
 st.divider()
