@@ -41,14 +41,14 @@ df["Bathrooms"] = df["Bathrooms"].apply(extract_number)
 df["Toilets"] = df["Toilets"].apply(extract_number)
 
 # Newly Built → 1/0
-df["Newly_Built"] = df["Newly Built"].astype(str).str.lower().map({"yes": 1, "no": 0}).fillna(0)
+df["Newly Built"] = df["Newly Built"].astype(str).str.lower().map({"yes": 1, "no": 0}).fillna(0)
 
 # Clean Price
 df['Price'] = df['Price'].astype(str).str.replace(',', '').str.extract(r'(\d+)')[0].astype(float)
 
 # Features & target
 categorical_cols = ['City', 'Neighborhood', 'Property_type_extracted']
-numeric_cols = ['Bedrooms', 'Bathrooms', 'Toilets', 'Newly_Built']
+numeric_cols = ['Bedrooms', 'Bathrooms', 'Toilets', 'Newly Built']
 X = df[categorical_cols + numeric_cols]
 y = df["Price"]
 
