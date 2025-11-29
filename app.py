@@ -18,10 +18,11 @@ bedrooms = st.number_input("Number of Bedrooms", min_value=0, value=1)
 bathrooms = st.number_input("Number of Bathrooms", min_value=0, value=1)
 toilets = st.number_input("Number of Toilets", min_value=0, value=1)
 newly_built = st.radio("Newly Built?", ["Yes", "No"])
-location = st.selectbox("City", location_options)
-neighborhood = st.text_input("Neighborhood", "")
 furnished = st.radio("Furnished?", ["Yes", "No"])
 serviced = st.radio("Serviced?", ["Yes", "No"])
+location = st.selectbox("City", location_options)
+neighborhood = st.text_input("Neighborhood", "")
+
 
 # Convert Newly Built to numeric
 newly_built_numeric = 1 if newly_built == "Yes" else 0
