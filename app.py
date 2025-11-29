@@ -26,6 +26,8 @@ neighborhood = st.text_input("Neighborhood", "")
 
 # Convert Newly Built to numeric
 newly_built_numeric = 1 if newly_built == "Yes" else 0
+furnished = 1 if furnished == "Yes" else 0
+serviced = 1 if serviced == "Yes" else 0
 
 # Prepare input DataFrame
 X_input = pd.DataFrame([{
