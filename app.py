@@ -20,6 +20,8 @@ toilets = st.number_input("Number of Toilets", min_value=0, value=1)
 newly_built = st.radio("Newly Built?", ["Yes", "No"])
 location = st.selectbox("City", location_options)
 neighborhood = st.text_input("Neighborhood", "")
+furnished = st.radio("Furnished?", ["Yes", "No"])
+serviced = st.radio("Serviced?", ["Yes", "No"])
 
 # Convert Newly Built to numeric
 newly_built_numeric = 1 if newly_built == "Yes" else 0
@@ -32,7 +34,9 @@ X_input = pd.DataFrame([{
     "Bedrooms": float(bedrooms),
     "Bathrooms": float(bathrooms),
     "Toilets": float(toilets),
-    "Newly Built": float(newly_built_numeric)
+    "Newly Built": float(newly_built_numeric),
+    "Furnished": float(furnished),
+    "serviced": float(serviced)
 }])
 
 st.divider()
