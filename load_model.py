@@ -9,7 +9,7 @@ except NameError:
     # Fallback if __file__ is not defined (e.g., interactive shell, Streamlit)
     BASE_DIR = os.getcwd()
 
-MODEL_FILENAME = "rfmodel.pkl"
+MODEL_FILENAME = "rfmodel_v2.pkl"
 MODEL_PATH = os.path.join(BASE_DIR, MODEL_FILENAME)
 
 # Load trained model

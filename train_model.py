@@ -74,5 +74,5 @@ y_pred = pipeline.predict(X_test)
 print(f"R²: {r2_score(y_test, y_pred):.3f}, RMSE: {mean_squared_error(y_test, y_pred, squared=False):.2f}")
 
 # Save pipeline
-joblib.dump(pipeline, "rfmodel.pkl")
+joblib.dump(pipeline, "rfmodel_v2.pkl")
 print("Pipeline trained and saved!")
