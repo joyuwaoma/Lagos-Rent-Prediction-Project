@@ -47,8 +47,10 @@ st.divider()
 # Predict
 if st.button("Predict!"):
     try:
-        prediction = model.predict(X_input)[0]
-        st.success(f"Predicted Monthly Rent: ₦{prediction:,.0f}")
+        #prediction = model.predict(X_input)[0]
+        prediction_log = model.predict(X_input)[0]
+        prediction = np.expm1(prediction_log)
+        st.success(f"Predicted Yearly Rent: ₦{prediction:,.0f}")
         st.balloons()
     except Exception as e:
         st.error(f"Prediction failed: {e}")
