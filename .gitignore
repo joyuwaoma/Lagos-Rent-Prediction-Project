@@ -2,8 +2,8 @@ venv/
 .DS_Store
 __pycache__/
 *.pyc
+*.pkl
 *.env
 *.egg-info/
 /.vscode/
 /.ipynb_checkpoints/.DS_Store
-
